@@ -1,4 +1,4 @@
-# SPdenovo
+# SPdenovo <img src="https://raw.githubusercontent.com/systemPipeR/systemPipeR.github.io/main/static/images/SPR-Workflows.png" align="right" height="139" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/systemPipeR/SPdenovo/actions/workflows/R_CMD.yml/badge.svg)](https://github.com/systemPipeR/SPdenovo/actions/workflows/R_CMD.yml)
