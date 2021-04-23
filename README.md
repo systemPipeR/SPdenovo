@@ -30,16 +30,16 @@ BiocManager::install("systemPipeRdata")
 
 Workflow includes following steps:
 
-# Trinity Transcriptome Assembly
-# Assembly Quality Assessment 
-## Counting Full-length Transcripts
-## Contig Nx and ExN50 stats
-## Examine strand-specificity of reads
-# Transcript Quantification
-# QC Samples and Bio Replicates
-# Differential Transcript or Gene Expression
-# Differential Transcript Usage
-# Identifying Sequence Polymorphisms or Variants
-# Coding Region Identification
-# Functional Annotation of Transcripts
-#  Gene Ontology term functional category enrichments
+- Trinity Transcriptome Assembly
+- Assembly Quality Assessment 
+- Counting Full-length Transcripts
+- Contig Nx and ExN50 stats
+- Examine strand-specificity of reads
+- Transcript Quantification
+- QC Samples and Bio Replicates
+- Differential Transcript or Gene Expression
+- Differential Transcript Usage
+- Identifying Sequence Polymorphisms or Variants
+- Coding Region Identification
+- Functional Annotation of Transcripts
+-  Gene Ontology term functional category enrichments
