@@ -12,12 +12,6 @@
 
 ### Installation
 
-To install the package, please use the _`BiocManager::install`_ command:
-```
-if (!requireNamespace("BiocManager", quietly=TRUE))
-    install.packages("BiocManager")
-BiocManager::install("systemPipeR/SPdenovo", build_vignettes=TRUE, dependencies=TRUE)
-```
 To obtain the *systemPipeR* and *systemPipeRdata*, please run as follow:
 ```
 if (!requireNamespace("BiocManager", quietly=TRUE))
@@ -26,20 +20,22 @@ BiocManager::install("systemPipeR")
 BiocManager::install("systemPipeRdata")
 ```
 
-## Workflow environment
+### Usage
 
-Workflow includes following steps:
+To test workflows quickly or design new ones from existing templates, users can
+generate with a single command workflow instances fully populated with sample data 
+and parameter files required for running a chosen workflow.
 
-- Trinity Transcriptome Assembly
-- Assembly Quality Assessment 
-- Counting Full-length Transcripts
-- Contig Nx and ExN50 stats
-- Examine strand-specificity of reads
-- Transcript Quantification
-- QC Samples and Bio Replicates
-- Differential Transcript or Gene Expression
-- Differential Transcript Usage
-- Identifying Sequence Polymorphisms or Variants
-- Coding Region Identification
-- Functional Annotation of Transcripts
--  Gene Ontology term functional category enrichments
+Use `git` or `git-bash.exe` (Windows) to download the template and run 
+
+```
+git clone https://github.com/systemPipeR/SPdenovo.git
+cd SPdenovo
+```
+
+To init the workflow management instance, run
+```r
+library("systemPipeR")
+sal <- SPRproject()
+sal <- importWF(sal, file_path = "SPdenovo.Rmd")
+```
